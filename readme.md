@@ -3,7 +3,7 @@ This system basically accepts connections through sockets, then the connected cl
 these objects are then handled through a multithreading client handler that uses a maximum of three threads concurrently,
 while waiting for working threads to complete their task every other event object is stored in a Queue data structure,
 each thread sends an HTTP Request to AWS API Gateway, which acts as the bridge connecting our system with the AWS Lambda
-function, each AWS Lambda function then receives the event as an input, sleeps/waits 1 to 5 seconds randomly, and return
+function, each AWS Lambda function then receives the event as an input, sleeps/waits 1 to 5 seconds randomly, and returns
 the input that was passed to it.
 
 ## Summary
