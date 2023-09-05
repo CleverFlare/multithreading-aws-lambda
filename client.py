@@ -11,10 +11,6 @@ event = {
     "name": "Muhammad"
 }
 
-def send(msg):
-    sockets.send(client, msg)
-    recv_msg = sockets.recv(client)
-    print(recv_msg)
 while True:
     sockets.send(client, json.dumps(event))
     time.sleep(1)
