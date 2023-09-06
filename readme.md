@@ -15,5 +15,4 @@ This system does the following:
 1. each thread sends an HTTP request with a payload of the event object to an AWS API Gateway which in turn sends it to the AWS Lambda function.
 1. the AWS Lambda function sleeps/waits 1 to 5 seconds randomly before sending back the event object that it received as an input paramater.
 
-
-> **Note:** to start the system type the following command in the terminal `python server.py`, to run a mocking multi-events server that sends dummy event objects every 1 second type `python client.py`, but make sure the `server.py` script is running first.
+> **NOTE:** you can find a detailed documentation of the system in the wiki section of the repository, the documentation is aimed for technical people, but it's also easy to understand for non-technical people.
